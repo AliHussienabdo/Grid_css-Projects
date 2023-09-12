@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 234, 243);
+    color: white;
+}
+.container{
+    height: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: 15px;
+    margin: 5px;
+    
+}
+
+.header, .nav, .article, .sidebar, .footer{
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.header{
+    grid-column: 1/5;
+    background-color: rgb(49, 101, 49);
+    font-size: 30px;
+}
+
+.sidebar{
+    grid-row: 2/8;
+    background-color: blueviolet;
+    font-size: 30px;
+}
+.nav{
+    grid-column: 2/5;
+    background-color: rgb(100, 100, 161);
+    font-size: 30px;
+}
+.article{
+    grid-row: 3/8;
+    grid-column: 2/5;
+    background-color: red;
+}
+.footer{
+    grid-column: 1/5;
+    background-color: rgb(101, 93, 93);
+    font-size: 20px;
+}
